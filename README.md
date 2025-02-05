@@ -36,7 +36,7 @@ git clone https://github.com/Furry-Monster/witch_one.git
 flutter pub get
 ```
 
-1. 运行应用
+3. 运行应用
 
 ```bash
 flutter run
