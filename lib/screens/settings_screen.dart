@@ -43,19 +43,23 @@ class _SettingsScreenState extends State<SettingsScreen> {
         showDialog(
           context: context,
           builder: (context) => AlertDialog(
-            title: const Text('🎉 恭喜发现彩蛋！'),
-            content: const Column(
+            title: const Text('🎉 我并不是彩蛋！'),
+            content: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
-                Text('选择困难？其实答案一直都在你心里。\n\n'
+                const Text('选择困难？其实答案一直都在你心里。\n\n'
                     '纠结要吃什么的时候，闭上眼睛深呼吸，\n'
                     '第一个出现在脑海中的美食，\n'
                     '就是你现在最想吃的。\n\n'
                     '生活就是这么简单，\n'
                     '不要把选择变成负担。\n\n'
                     '— 来自开发者的小建议 😊'),
-                SizedBox(height: 16),
-                FlutterLogo(size: 64),
+                const SizedBox(height: 16),
+                Image.asset(
+                  'assets/icons/icon.png',
+                  width: 64,
+                  height: 64,
+                ),
               ],
             ),
             actions: [
